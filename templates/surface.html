@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset='utf-8' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Fair Journey</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <style>
+  .navbar-default {
+    background-color: #333333;
+    border-color: #333333;
+}
+  #map { position:absolute; top:18px; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'index' %}" title="uiCookies:FineOak">Fair Journey</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'service' %}">Our Services</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <!--<li><a href="gallery.html">Gallery</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                <li class="dropdown-submenu dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+              </ul>
+            </li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- embed the view from vic gov-->
+<div id="map"><iframe width="1920px" title="Road segments, with surface type" height="880px" src="https://data.melbourne.vic.gov.au/w/su97-b2at/spy9-nmud?cur=Rk6pd6N-Y7i&from=root" frameborder="0"scrolling="no"><a href="https://data.melbourne.vic.gov.au/Assets-Infrastructure/Road-segments-with-surface-type/su97-b2at" title="Road segments, with surface type" target="_blank">Road segments, with surface type</a></iframe></div>
+
+</body>
+</html>
